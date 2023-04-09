@@ -12,13 +12,13 @@ body {
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    height: 100%;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
     width: 100%;
 }
 
 .header {
     background-color: white;
-    height: 100px;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -40,7 +40,7 @@ body {
     margin: 10px;
     border: none;
     border-radius: 100px;
-    background-color: gray;
+    background-color: rgb(207, 207, 207);
 }
 
 .profile {
@@ -86,7 +86,79 @@ ul {
 }
 
 .main-content {
-    background-color: greenyellow;
-    height: 400px;
+    background-color: rgb(207, 207, 207);
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
+    padding: 100px;
+}
+
+.projects h4 {
+    margin-bottom: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.card-an {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;   
+}
+
+.an {
+    box-shadow: 5px 6px 5px grey;
+}
+
+.announcements h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.announcements p {
+    text-align: center;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    margin-right: 10px;
+}
+
+.card-users {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
