@@ -1,7 +1,16 @@
+:root {
+    --gris: #d1d5db;
+    --celeste: #60a5fa;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -23,7 +32,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px var(--gris);
 }
 
 .top-header {
@@ -40,7 +49,7 @@ body {
     margin: 10px;
     border: none;
     border-radius: 100px;
-    background-color: rgb(207, 207, 207);
+    background-color: var(--gris);
 }
 
 .profile {
@@ -62,10 +71,11 @@ body {
 }
 
 .buttons > button {
-    background-color: aqua;
+    background-color: var(--celeste);
     padding: 10px;
     border: none;
     border-radius: 100px;
+    color: white;
 }
 
 .profile-info {
@@ -73,12 +83,13 @@ body {
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: var(--celeste);
     height: 100%;
     grid-row: 1 / 3;
     display: grid;
     align-content: space-around;
     justify-content: center;
+    color: white;
 }
 
 ul {
@@ -86,7 +97,7 @@ ul {
 }
 
 .main-content {
-    background-color: rgb(207, 207, 207);
+    background-color: var(--gris);
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -132,7 +143,7 @@ ul {
 }
 
 .an {
-    box-shadow: 5px 6px 5px grey;
+    box-shadow: 5px 6px 5px --gris;
 }
 
 .announcements h4 {
